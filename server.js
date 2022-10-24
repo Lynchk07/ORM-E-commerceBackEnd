@@ -15,7 +15,7 @@ const db = mysql.createConnection({
   user:process.env.DB_USER,
   //"-p password"
   password: process.env.DB_PASSWORD,
-  database:'department_db'
+  database:'ecommerce_db'
   },
 
 );

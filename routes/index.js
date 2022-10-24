@@ -11,9 +11,9 @@ module.exports = router;
 
 
 
-const homeRoutes = require('./home-routes');
+// const homeRoutes = require('./home-routes');
 
-router.use('/api', apiRoutes);
-router.use('/', homeRoutes);
+// router.use('/api', apiRoutes);
+// router.use('/', homeRoutes);
 
 module.exports = router;

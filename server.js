@@ -7,18 +7,18 @@ const cTABLE = require('console.table');
 //dotenv
 require('dotenv').config()
 
-const db = mysql.createConnection({
-  // "-h" host 
-  host:process.env.DB_HOST,
-  // port:3001,
-  //mysql username "-u =user"
-  user:process.env.DB_USER,
-  //"-p password"
-  password: process.env.DB_PASSWORD,
-  database:'ecommerce_db'
-  },
+// const db = mysql.createConnection({
+//   // "-h" host 
+//   host:process.env.DB_HOST,
+//   // port:3001,
+//   //mysql username "-u =user"
+//   user:process.env.DB_USER,
+//   //"-p password"
+//   password: process.env.DB_PASSWORD,
+//   database:'ecommerce_db'
+//   },
 
-);
+// );
 
 
 const app = express();
@@ -30,9 +30,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-sequelize.sync({force:false}).then(()=>{
+sequelize.sync({force:true}).then(()=>{
     app.listen(PORT, () => {
-      console.log(`App listening on port ${PORT}!`);
+      console.log(`App listening on port http://localhost:${PORT}`);
      })
 })
 

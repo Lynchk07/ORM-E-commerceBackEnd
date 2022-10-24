@@ -3,7 +3,7 @@ const routes = require('./routes');
 const mysql = require('mysql2');
 // import sequelize connection
 const sequelize = require('./config/connection');
-// 
+const cTABLE = require('console.table');
 //dotenv
 require('dotenv').config()
 

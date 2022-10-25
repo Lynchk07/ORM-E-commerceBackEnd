@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   // find all tags
   Tag.findAll({include:[{model:Product,through:ProductTag}]})
   .then(tagDataBase => res.json(tagDataBase))
-  // be sure to include its associated Product data
+  
 });
 
 router.get('/:id', (req,res) => {

@@ -35,4 +35,6 @@
 
   ## Video Tutorial Link 
   [![Vlog](]({https://drive.google.com/file/d/1JetMJw2THiw_S-a_yNhOOh_Jwys7MKCR/view} "Ecommerce Backend Insomnia walk through")
+  https://drive.google.com/file/d/1JetMJw2THiw_S-a_yNhOOh_Jwys7MKCR/view
+  
   
